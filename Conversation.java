@@ -11,6 +11,8 @@ public class Conversation {
 	int birthyear;
 	double priceOrange;
 	double pricePeanuts;
+    double priceBread;
+    double priceWatermelon;
 	double totalPrice=0;  //initialize to 0
    
     System.out.println("Welcome. Type your first name and press enter.");
@@ -29,12 +31,30 @@ public class Conversation {
 	System.out.println("Approximate age: " + (2022-birthyear));
    
 	//Part 5 code goes here.
-
+    int houseNumber;
+    String streetName;
+    System.out.print("Enter house number> ");
+    houseNumber = reader.nextInt();
+    reader.nextLine();
+    System.out.print("Enter street name> ");
+    streetName = reader.nextLine();
    
 
     
     //Part 6 Add code to read the rest of the address (city, state, zipcode) and print it
+    String city;
+    String state;
+    String zipcode;
+    System.out.print("Enter city> ");
+    city = reader.nextLine();
+    System.out.print("Enter State Initials> ");
+    state = reader.nextLine();
+    System.out.print("Enter Zipcode> ");
+    zipcode = reader.nextLine();
+    
 
+    System.out.println(firstName + " "  + lastName + " " + houseNumber + " " + streetName + " " + city + " " +  state + " " + zipcode);
+    
 
 
     //////////////////////////////
@@ -46,7 +66,12 @@ public class Conversation {
 	pricePeanuts = reader.nextDouble();
 	totalPrice += pricePeanuts;
     //Part 4 code for bread and watermelon
-
+    System.out.print("How much does bread cost? $");
+    priceBread = reader.nextDouble();
+    totalPrice += priceBread;
+    System.out.print("How much do watermelon cost? $");
+    priceWatermelon = reader.nextDouble();
+    totalPrice += priceWatermelon;
 
 
 	System.out.println("The total cost is $" + totalPrice);

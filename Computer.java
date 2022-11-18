@@ -1,4 +1,4 @@
-/**SUPA L2.1 Understand: integer arithmetic, casting, remainder operator*/
+  /**SUPA L2.1 Understand: integer arithmetic, casting, remainder operator*/
 public class Computer {
     public static void main(String[] args)
     {
